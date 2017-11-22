@@ -1,10 +1,10 @@
 # RootFindingMethods
 
-##Abstract:
+## Abstract:
 [Finding root](https://en.wikipedia.org/wiki/Root-finding_algorithm) is a mathematic problem that is vital for deeper applications in various field. However, root of mostly natural functions can not be found exactly
 Therefore, there are some techniques for finding value that approximately close to the real root.
 
-##Prerequisite:
+## Prerequisite:
 
   * Install python
 
@@ -14,7 +14,7 @@ Therefore, there are some techniques for finding value that approximately close 
   
     sudo pip3 install -r requirements
 
-##Preprocessing:
+## Preprocessing:
 
   + Convert string expression into mathematic expression using [postfix](http://interactivepython.org/runestone/static/pythonds/BasicDS/InfixPrefixandPostfixExpressions.html) technique
 
@@ -22,23 +22,23 @@ Therefore, there are some techniques for finding value that approximately close 
 
   + Split global interval into possible valid sub-intervals that contain roots. Which can be used as information to prove whether the functions have root (Using [Intermediate Value Theorem](https://en.wikipedia.org/wiki/Intermediate_value_theorem))
 
-##Usage:
+## Usage:
 
-    + python3 main.py -m 2 -lb -100 -rb 100 -s 0.2 -fp 4 -i 30
+      python3 main.py -m 2 -lb -100 -rb 100 -s 0.2 -fp 4 -i 30
   
-  -m: for methods. There are 2 methods, 1/ for Bisection, and 2/ for Newton's
+  * m: for methods. There are 2 methods, 1/ for Bisection, and 2/ for Newton's
   
-  -lb rb: restriction of intervals. Should not be too large (Memory Problem)
+  * lb, rb: restriction of intervals. Should not be too large (Memory Problem)
   
-  -s: step size to search for sub-intervals. Should be change to fit appropriate with users's system
+  * s: step size to search for sub-intervals. Should be change to fit appropriate with users's system
   
-  -fp: floating point. Can't get exactly value in some cases (That is the reason why using these techinques). Use floating point to know when the results are acceptable
+  * fp: floating point. Can't get exactly value in some cases (That is the reason why using these techinques). Use floating point to know when the results are acceptable
   
-  -i: iterators. This one for Newton's only (-m 2). Number of step that program will update value (xn)
+  * i: iterators. This one for Newton's only (-m 2). Number of step that program will update value (xn)
   
   
 
-##Summary:
+## Summary:
 
 Use two basic techniques for finding root.
 

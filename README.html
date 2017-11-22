@@ -144,12 +144,14 @@ $(document).ready(function () {
 </div>
 <div id="usage" class="section level2">
 <h2>Usage:</h2>
-<pre><code>+ python3 main.py -m 2 -lb -100 -rb 100 -s 0.2 -fp 4 -i 30</code></pre>
-<p>-m: for methods. There are 2 methods, 1/ for Bisection, and 2/ for Newton’s</p>
-<p>-lb rb: restriction of intervals. Should not be too large (Memory Problem)</p>
-<p>-s: step size to search for sub-intervals. Should be change to fit appropriate with users’s system</p>
-<p>-fp: floating point. Can’t get exactly value in some cases (That is the reason why using these techinques). Use floating point to know when the results are acceptable</p>
-<p>-i: iterators. This one for Newton’s only (-m 2). Number of step that program will update value (xn)</p>
+<pre><code>  python3 main.py -m 2 -lb -100 -rb 100 -s 0.2 -fp 4 -i 30</code></pre>
+<ul>
+<li><p>m: for methods. There are 2 methods, 1/ for Bisection, and 2/ for Newton’s</p></li>
+<li><p>lb, rb: restriction of intervals. Should not be too large (Memory Problem)</p></li>
+<li><p>s: step size to search for sub-intervals. Should be change to fit appropriate with users’s system</p></li>
+<li><p>fp: floating point. Can’t get exactly value in some cases (That is the reason why using these techinques). Use floating point to know when the results are acceptable</p></li>
+<li><p>i: iterators. This one for Newton’s only (-m 2). Number of step that program will update value (xn)</p></li>
+</ul>
 </div>
 <div id="summary" class="section level2">
 <h2>Summary:</h2>
